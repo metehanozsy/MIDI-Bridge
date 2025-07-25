@@ -19,4 +19,4 @@ You can tweak with the code, not an expert of it tbh.
 
 LoopMIDI must be downloaded for the app to work. You can find it here: https://www.tobias-erichsen.de/software/loopmidi.html
 
-App originally runs in the background and starts with the boot. If you don't want it to run in the backgorund or wanna see the program messages, you can just delete "#![windows_subsystem = "windows"]", which is in the beginning of the code. I also added both versions .exe files. In the LoopMIDI, create a MIDI port named "MIDI Bridge". Also you might wanna use MIDI-OX, or Reaper's stock plugin ReaControlMIDI to monitor and make sure everything works properly.
+Works on Windows for now. App originally runs in the background and starts with the boot. If you don't want it to run in the backgorund or wanna see the program messages, you can just delete "#![windows_subsystem = "windows"]", which is in the beginning of the code. I also added both versions .exe files. In the LoopMIDI, create a MIDI port named "MIDI Bridge". Also you might wanna use MIDI-OX, or Reaper's stock plugin ReaControlMIDI to monitor and make sure everything works properly.
