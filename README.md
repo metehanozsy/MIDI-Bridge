@@ -11,6 +11,9 @@ R -> +5V
 
 S -> GND
 
+<img width="1850" height="850" alt="TRS-Nano layout" src="https://github.com/user-attachments/assets/afe886c0-2c24-4c0d-994c-e86af5908c0b" />
+Here is an awful yet simple illustration of the connection.
+
 You can tweak with the code, not an expert of it tbh.
 # Converter
 
