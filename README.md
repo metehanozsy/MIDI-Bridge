@@ -1,6 +1,5 @@
 # MIDI-Bridge
 An application made for converting serial data to MIDI for microcontrollers with ch340. 
-
 I had an arduino nano with ch340 laying around, so I decided to put a use to it.
 # Arduino
 Female TRS connection should be like this:
