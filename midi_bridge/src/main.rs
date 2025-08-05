@@ -1,11 +1,13 @@
-#![windows_subsystem = "windows"]
+#![windows_subsystem = "windows"] // Delete this line if you dan't want the program to run in the background
 
+// Libraries
 use serialport::{available_ports, SerialPort};
 use std::io::Read;
 use std::time::{Duration, Instant};
 use std::thread;
 use midir::{MidiOutput};
 
+// Autostart function
 #[cfg(target_os = "windows")]
 fn setup_autostart() -> Result<(), Box<dyn std::error::Error>> {
     use std::env;
@@ -25,8 +27,8 @@ fn setup_autostart() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-const ARDUINO_ID: [u8; 2] = [0xFA, 0xCE];
-const BAUD_RATE: u32 = 115_200;
+const ARDUINO_ID: [u8; 2] = [0xFA, 0xCE]; // Program will seek for this ID
+const BAUD_RATE: u32 = 115_200; // Baud rate
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     #[cfg(target_os = "windows")]
